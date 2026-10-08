@@ -29,6 +29,7 @@
     "@angular/compiler-cli": "^21.2.0",
     "@types/d3-force": "^3.0.10",
     "prettier": "^3.8.1",
+    "railway": "^3.13.1",
     "typescript": "~5.9.2"
   }
 }
