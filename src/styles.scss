@@ -278,8 +278,8 @@ tr.source-zone, tr.source-zone--hover { position: static; isolation: auto; backg
 .hover-underline:hover { text-decoration: underline; }
 
 .kpis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1px;
   background: var(--border-1);
   border: 1px solid var(--border-1);
@@ -288,7 +288,7 @@ tr.source-zone, tr.source-zone--hover { position: static; isolation: auto; backg
   box-shadow: var(--shadow-card);
 }
 @media (max-width: 720px) { .kpis { grid-auto-flow: row; } }
-.kpi { background: var(--bg); padding: 13px 16px; }
+.kpi { flex: 1 1 170px; background: var(--bg); padding: 13px 16px; }
 .kpi__label { font-size: 11px; color: var(--muted-2); }
 .kpi__value { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 21px; margin-top: 6px; }
 .kpi__value--green { color: var(--green); }
